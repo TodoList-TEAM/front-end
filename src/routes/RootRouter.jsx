@@ -1,6 +1,6 @@
 // src/components/RootRouter.jsx
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import {RootLayout} from './RootLayout';
+import {RootLayout_after, RootLayout_before} from './RootLayout';
 //import ErrorPage from './ErrorPage';
 import { LoginPage } from '../components/loginPage/LoginPage';
 import { HomePage } from '../components/homePage/HomePage';
@@ -10,7 +10,6 @@ import { ComunityPage } from '../components/comunityPage/ComunityPage';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <RootLayout />,
     
     children: [
       {
@@ -18,17 +17,24 @@ const router = createBrowserRouter([
         element: <LoginPage />,
       },
       {
-        path: 'home',
-        element: <HomePage />,
+        element: <RootLayout_after />,
+        children:[
+          {
+            path: 'home',
+            element: <HomePage />, 
+            
+          },
+          {
+            path: 'comunity',
+            element: <ComunityPage />,
+          },
+          {
+            path: 'mypage',
+            element: <MyPage />,
+          },
+        ]
       },
-      {
-        path: 'comunity',
-        element: <ComunityPage />,
-      },
-      {
-        path: 'mypage',
-        element: <MyPage />,
-      },
+      
     ],
   },
 ]);

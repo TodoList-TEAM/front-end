@@ -1,0 +1,60 @@
+
+
+
+
+.comunityHomePage{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F4EF;
+    
+    width: 95vw;
+    max-width: 430px;
+    height: 100vh;
+}
+
+.comunityHomePage_yellowBox{
+    background-color:  rgb(255, 225, 56);
+    border-radius: 20px;
+    box-shadow: 0px 5px 4px rgb(182, 182, 182);
+    margin: 15px;
+    padding: 20px 5px;
+}
+
+.comunityHomePage_add{
+    background-color:  white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 4px rgb(182, 182, 182);
+    margin: 15px;
+    padding: 0px 10px;
+}
+
+.comunityHomePage_contents{
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 4px rgb(182, 182, 182);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px 5px;
+}
+
+
+.comunityHomePage_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    border-bottom: solid 2px rgb(179, 179, 179);
+}
+.comunityHomePage_option > button{
+    background-color: #ffffff00;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+
+
+/*  ↑ 여기까지가 커뮤니티 홈 페이지 */
+/*  ↑ 여기까지가 커뮤니티 홈 페이지 */
+

@@ -1,13 +1,13 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
-
+import './ComunityPage.css'
 
 export function ComunityPage(){
 
     return(
+      <div className="screen_main">
         <div className='comunityHomePage'>
-          <Header />
-
+          
           
           <div className='comunityHomePage_add'>
             <h1>광고</h1>
@@ -61,7 +61,8 @@ export function ComunityPage(){
             +
           </button>
 
-          <Footer />
         </div>
+      </div>
+        
     )
 }

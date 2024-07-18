@@ -1,11 +1,13 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
+import './HomePage.css'
 
 export function HomePage(){
 
     return(
+      <div className="screen_main">
         <div className='homePage'>
-          <Header />
+          
 
           <div className='add'>
             <p>여기는 광고가 나와요</p>
@@ -51,7 +53,9 @@ export function HomePage(){
             </div>
           </div>
 
-          <Footer />
+          
         </div>
+      </div>
+        
     )
 }

@@ -3,7 +3,7 @@ import {Header} from '../components/Header';
 import {Footer} from '../components/Footer'
 
 
-export function RootLayout(){
+function RootLayout_after(){
     return(
         <>
             <Header />
@@ -12,3 +12,15 @@ export function RootLayout(){
         </>
     )
 }
+
+
+function RootLayout_before(){
+    return(
+        <>
+            <Outlet />
+        </>
+    )
+}
+
+
+export {RootLayout_after, RootLayout_before}

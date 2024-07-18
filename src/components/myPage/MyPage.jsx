@@ -1,16 +1,15 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
-
+import './MyPage.css'
 
 
 
 export function MyPage(){
 
     return(
+      <div className="screen_main">
         <div className='myPage'>
           
-          <Header/>
-
 
           <div className='body'>
             <div className='myPage_plan'>
@@ -51,8 +50,8 @@ export function MyPage(){
 
               </div>
             </div>
-            <div className='myPage_diary'>
-              <div class='title'>
+            <div className='myPage_contents'>
+              <div class='mypage_contents_title'>
                 <p>TODAY'S DIARY</p>
               </div>
               
@@ -64,7 +63,8 @@ export function MyPage(){
             +
           </button>
 
-          <Footer />
         </div>
+      </div>
+        
     )
 }
