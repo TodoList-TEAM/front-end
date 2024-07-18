@@ -14,13 +14,14 @@ function RootLayout_after(){
 }
 
 
-function RootLayout_before(){
+function RootLayout_MyInfo(){
     return(
         <>
             <Outlet />
+            <Footer />
         </>
     )
 }
 
 
-export {RootLayout_after, RootLayout_before}
+export {RootLayout_after, RootLayout_MyInfo}

@@ -13,7 +13,7 @@ export function MyPage(){
 
           <div className='body'>
             <div className='myPage_plan'>
-              <p>PLANS OF THIS WEEK</p>
+              <p className="mypage_title">PLANS OF THIS WEEK</p>
               <ul>
                 <li>
                   -
@@ -23,6 +23,7 @@ export function MyPage(){
                 </li>
               </ul>
             </div>
+
             <div className='myPage_mid'>
               <div className='schedule'>
                 <div className='title'>
@@ -50,12 +51,71 @@ export function MyPage(){
 
               </div>
             </div>
-            <div className='myPage_contents'>
-              <div class='mypage_contents_title'>
+
+            <div className='myPage_Diary'>
+              <div className='mypage_title'>
                 <p>TODAY'S DIARY</p>
               </div>
-              
+              <div className="mypage_Diary_up">
+                <div className="mypage_Diary_Imoge">
+                  <div className="kibun">
+                    <p className="Diary_title">오늘의 기분은 어떤가요?</p>
+                  </div>
+                  <div className="condition">
+                    <p className="Diary_title">오늘의 컨디션은 어떤가요?</p>
+                  </div>
+                </div>
+                <div className='kamsa'>
+                  <p className="Diary_title">오늘 감사한 일이 있었나요?</p>
+                </div>
+              </div>
+              <div className="mypage_Diary_down">
+                <p className="Diary_title">오늘 하루 일과는 어땠나요?</p>
+              </div>
             </div>
+
+            <div className="mypage_Photo">
+              <p className="mypage_title">TODAY'S PHOTO</p> 
+              <div className="mypage_Photo_contents">
+                <div className="mypage_Photos">
+                  <div className="photo">
+                    <div className="picture">
+                      n
+                    </div>
+                    <div className="picture_info">
+                      <p>내용을 입력하세요</p>
+                    </div>
+                  </div>
+                  <div className="photo">
+                    <div className="picture">
+
+                    </div>
+                    <div className="picture_info">
+                      <p>내용을 입력하세요</p>
+                    </div>
+                  </div>
+                  <div className="photo">
+                    <div className="picture">
+
+                    </div>
+                    <div className="picture_info">
+                      <p>내용을 입력하세요</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mypage_Photo_Add">
+                  <button className="AddBtn">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mypage_Memo">
+              <p className="mypage_title">TODAY'S MEMO</p>
+              <div className="mypage_Memo_box">
+
+              </div>
+            </div>
+
           </div>
 
 

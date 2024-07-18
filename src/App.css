@@ -34,10 +34,65 @@ body{
 /* 위는 기본 */
 
 
+.Thumnail_content{
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
 
+.info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
 
+.info_top{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.title{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+.cate{
+    color:#bbbbbb;
+}
 
+.info_mid > p{
+    color:#bbbbbb;
+}
 
+.info_bottom{
+    display: flex;
+    flex-direction: row;
+}
 
+#good{
+    color:#ff5656;
+
+}
+#respones{
+    color:#43cfc4;
+}
+
+.info_detail{
+    display: flex;
+    flex-direction: row;
+}
+.info_detail > p{
+    font-size:smaller;
+    color:#bbbbbb;
+}
+
+.Thumnail_Img{
+    width: 25%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
 
 

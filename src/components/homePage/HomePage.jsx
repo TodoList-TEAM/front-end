@@ -1,6 +1,7 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
 import './HomePage.css'
+import { Thnumnail } from "../Thumnail"
 
 export function HomePage(){
 
@@ -19,6 +20,12 @@ export function HomePage(){
             </div>
             <div className='homePage_popular'>
               <ul>
+                <li>
+                <div className='homePage_content_thumbnail'>
+                  <Thnumnail />
+                </div>
+                    
+                  </li>
                   <li>
                     <div className='homePage_content_thumbnail'>
                       <h3>인기 있는 게시글 제목1</h3>

@@ -1,8 +1,11 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
 import './ComunityPage.css'
+import { Cate } from "./Cate"
 
 export function ComunityPage(){
+
+ 
 
     return(
       <div className="screen_main">
@@ -10,10 +13,26 @@ export function ComunityPage(){
           
           
           <div className='comunityHomePage_add'>
-            <h1>광고</h1>
+            <h4>광고</h4>
           </div>
-          <div className='comunityHomePage_yellowBox'>
-            <h1>카테고리</h1>
+          <div className='comunityHomePage_CategoryBox'>
+            <div  className="CategoryBox_row">
+              <Cate />
+              <Cate />
+              <Cate />
+              <Cate />
+              <Cate />
+              <Cate />
+            </div>
+            <div  className="CategoryBox_row">
+              <Cate />
+              <Cate />
+              <Cate />
+              <Cate />
+              <Cate />
+              <Cate />
+            </div>
+            
           </div>
 
           <div className='comunityHomePage_contents'>

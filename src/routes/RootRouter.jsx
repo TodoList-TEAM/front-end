@@ -1,11 +1,12 @@
 // src/components/RootRouter.jsx
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import {RootLayout_after, RootLayout_before} from './RootLayout';
+import {RootLayout_after, RootLayout_MyInfo} from './RootLayout';
 //import ErrorPage from './ErrorPage';
 import { LoginPage } from '../components/loginPage/LoginPage';
 import { HomePage } from '../components/homePage/HomePage';
 import { MyPage } from '../components/myPage/MyPage';
 import { ComunityPage } from '../components/comunityPage/ComunityPage';
+import { MyInfoPage } from '../components/myInfo/MyInfoPage';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,16 @@ const router = createBrowserRouter([
           {
             path: 'mypage',
             element: <MyPage />,
+          },
+          
+        ]
+      },
+      {
+        element: <RootLayout_MyInfo />,
+        children:[
+          {
+            path: 'myInfo',
+            element: <MyInfoPage />,
           },
         ]
       },
