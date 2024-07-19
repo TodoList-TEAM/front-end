@@ -3,15 +3,20 @@
 
 
 
-
 .myPage{
     display: flex;
     flex-direction: column;
     background-color: #F5F4EF;
+    
 
     width: 95vw;
     max-width: 430px;
-    height: 200vh;
+    height: max-content;
+    padding-bottom: 14vh;
+}
+
+.body{
+    overflow: hidden;
 }
 
 .myPage_plan{
@@ -68,6 +73,8 @@
     font-size: 8px;
     font-weight: bold;
 }
+
+
 
 #drug{
     background-color: #EE8F84;
@@ -130,16 +137,17 @@
 .mypage_Photo_contents{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .mypage_Photos{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .photo{
+    width: 25%;
     border: solid 1px rgb(210, 201, 193);
     border-radius: 10px;
     margin: 5px;
@@ -148,9 +156,9 @@
     justify-content: space-between;
 }
 .picture{
-    background-color: #EE8F84;
+    background-color: #ecf2db;
     height: 50px;
-    width: 20vw;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -161,6 +169,12 @@
 .picture_info > p {
     padding: 3px 5px;
      font-size: 7px;
+}
+
+.mypage_Photo_Add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -185,7 +199,79 @@
     background-color: #ffffff00;
 }
 
+#drugBtn:checked~.popupModal {
+    visibility:hidden;
+}
 
+.popupModal {
+    visibility:visible;
+    background-image: url('./위젯 팝업 패턴.png');
+    background-size: 100% 100%;
+    width: 90vw;
+    max-width: 395px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    position: fixed;
+    top: 53%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.popupModal_top{
+
+    width: 90%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.popupModal_top > p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.popupModal_top > button {
+    background-color: #ffffff00;
+    border: none;
+    font-weight: bold;
+}
+
+.popupModal_box{
+    border: solid 1px rgb(132, 128, 122);
+    border-radius: 10px;
+    background-color: #ffffff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 50%;
+    padding: 0px 20px 10px 20px;
+    margin: 10px;
+    margin-top: 30px;
+    padding-top: 34px;
+}
+.popupModal_box_letter{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 3px;
+    padding-top: 4px;
+    margin: 7px;
+}
+.popupModal_box_letter_text{
+    background-color: #ffffff00;
+    
+    border:none;
+    width: 100%;
+    border-bottom: solid 1px rgb(132, 128, 122);
+}
+
+#X{
+    width: 20px;
+    height: 20px;
+    font-size: 100%;
+}
 
 

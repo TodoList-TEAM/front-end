@@ -36,15 +36,18 @@ export function MyPage(){
                 <button id='scheduleBtn'>+</button>
               </div>
               <div className='memoList'>  
-                <div className='memo' id='drug'>
+                <input type='checkbox' className="checkBoxV" id='drugBtn'></input>
+                <label for='drugBtn' className="memo" id='drug'>
                   <p>약 복용 시간</p>
+                  </label>
                 
-                </div>
-                <div className='memo' id='check'>
+                <input type='checkbox' className="checkBoxV" id='checkBtn'></input>
+                <label for='checkBtn' className='memo' id='check'>
                   <p>검진 결과</p>
                 
-                </div>
-                <div className='memo' id='caution'>
+                </label>
+                <input type='checkbox' className="checkBoxV" id='cautionBtn'></input>
+                <div for='cautionBtn' className='memo' id='caution'>
                   <p>약 주의사항</p>
                 
                 </div>
@@ -116,8 +119,39 @@ export function MyPage(){
               </div>
             </div>
 
+
+
+
           </div>
 
+
+
+            {/* 여기 아래는 클릭 시 나오는 모달 창 */}
+          
+            <div className="popupModal">
+              <div className="popupModal_top">
+                <p>■ 복용 해야 하는 약의 시간과 기간을 적어주세요.</p>
+                <label for='drugBtn' id='X'>X</label>
+              </div>
+              <div className="popupModal_box">
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+              </div>
+            </div>
 
           <button className='writeBtn'>
             +
