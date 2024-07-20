@@ -11,52 +11,59 @@ export function HomePage(){
           
 
           <div className='add'>
-            <p>여기는 광고가 나와요</p>
+            <p id='ex'>ADD</p>
           </div>
+
+          <div className="bannerDiv1">
+            <div className="banner1">
+              <p id='ex'>Banner1</p>
+            </div>
+            <div className="banner1_num">
+              . . .
+            </div>
+          </div>
+
+          <div className="bannerDiv2">
+            <div className="banner2">
+              <p id='ex'>Banner2</p>
+            </div>
+          </div>
+
           <div className='homePage_contents'>
-            <div className='homePage_option'>
-              <button>이번주 인기글</button>
-              <button>최신글</button>
+            <div className='homePage_popularcontents'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18" fill="none"><path fill="#FF7979" d="M6.545.75 5.346 3.2a17.185 17.185 0 0 1-3.395 4.707l-.158.15a4.672 4.672 0 0 0-1.417 3.298v.157a6.003 6.003 0 0 0 3.675 5.592l.227.096a5.898 5.898 0 0 0 4.612 0h.052a6.125 6.125 0 0 0 3.684-5.696V7.706a7.551 7.551 0 0 1-3.841 3.868h-.053c-.052 0-.665.254-.927 0a.665.665 0 0 1-.053-.875l.061-.044h.044a4.76 4.76 0 0 0 1.068-6.449C7.787 2.474 6.545.75 6.545.75Z"/></svg>
+              <p>오늘의 인기글</p>
             </div>
             <div className='homePage_popular'>
               <ul>
                 <li>
-                <div className='homePage_content_thumbnail'>
                   <Thnumnail />
-                </div>
-                    
-                  </li>
-                  <li>
-                    <div className='homePage_content_thumbnail'>
-                      <h3>인기 있는 게시글 제목1</h3>
-                      <h4>카테고리</h4>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='homePage_content_thumbnail'>
-                      <h3>인기 있는 게시글 제목2</h3>
-                      <h4>카테고리</h4>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='homePage_content_thumbnail'>
-                      <h3>인기 있는 게시글 제목3</h3>
-                      <h4>카테고리</h4>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='homePage_content_thumbnail'>
-                      <h3>인기 있는 게시글 제목4</h3>
-                      <h4>카테고리</h4>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='homePage_content_thumbnail'>
-                      <h3>인기 있는 게시글 제목5</h3>
-                      <h4>카테고리</h4>
-                    </div>
-                  </li>
-                </ul>
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+                <li>
+                  <Thnumnail />
+                </li>
+
+                
+                  
+              </ul>
             </div>
           </div>
 

@@ -1,39 +1,18 @@
-
+import React from "react"
 
 
 export function Post(){
 
-    const gotoPost = () => {
-        return(
-            <Link to='post/number'></Link>
-        )
-    }
+    
 
     return(
-        <div onClick={gotoPost}>
-            <div className="post_thum">
-                <div className="post_thum_info">
-                    <div className="top">
-                        <p className="title"></p>
-                        <p className="cate"></p>
-                    </div>
-                    <div className="mid">
-                        <p className="contents"></p>
-                    </div>
-                    <div className="bottom">
-                        <p className="good"></p>
-                        <p className="re"></p>
-                        <div>
-                            <p className="date"></p>
-                            <p className="time"></p>
-                            <p className="name"></p>
-                        </div>
-                    </div>
-                </div>
-                <div className="post_thum_pic">
-
-                </div>
+        <div className="Post">
+            <div className="backBtn">
+                <button id='back' 
+                >뒤로가기</button>
             </div>
+            게시글 누르면 나오는 게시글 상세 페이지<br></br>
+            _썸네일이나 게시글 목록에서 글 클릭시??
         </div>
     )
 }

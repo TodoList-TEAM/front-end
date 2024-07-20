@@ -35,28 +35,50 @@ body{
 /* 위는 기본 */
 
 
+#thum{
+    width: 100%;
+    height: 100%;
+}
+
+Link {
+    text-decoration: none;
+}
+
 .Thumnail_content{
+    border-bottom: solid 2px  rgb(229, 229, 229);
+    width: 85%;
     height: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 20px;
+    margin: 0px 10px 0px 10px;
 }
+
+.Thumnail_Img{
+    
+    border-radius: 15px;
+    width: 18%;
+    height: 100%;
+}
+
 
 .info{
     width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-size: 10px;
 }
 
 .info_top{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center;
 }
-.title{
-    font-size: 15px;
+.info_top > .title{
+    font-size: 13px;
     color: black;
     font-weight: bold;
 }
@@ -64,36 +86,47 @@ body{
     color:#bbbbbb;
 }
 
+
 .info_mid > p{
     color:#bbbbbb;
+    margin: 10px 0px 5px 0px;
 }
 
 .info_bottom{
     display: flex;
     flex-direction: row;
+
 }
 
-#good{
+.info_bottom_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_bottom_left > p {
+    margin: 0px 5px;
+    font-size: 12px;
+    height: max-content;
+}
+
+.good{
     color:#ff5656;
 
 }
-#respones{
+.respones{
     color:#43cfc4;
 }
 
-.info_detail{
+.info_bottom_right{
+    
     display: flex;
     flex-direction: row;
 }
-.info_detail > p{
+.info_bottom_right > p{
     font-size:smaller;
     color:#bbbbbb;
-}
-
-.Thumnail_Img{
-    width: 25%;
-    background-color: #e0e0e0;
-    border-radius: 10px;
+    margin: 2px;
 }
 
 

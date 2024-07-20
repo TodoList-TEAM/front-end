@@ -30,7 +30,7 @@ export function LoginPage(){
           </div>
           <div className='loginPage_plus'>
               <button>도움말 바로가기 &raquo;</button>
-              <button>회원가입 &raquo;</button>
+              <button><Link to='/signup'>회원가입 &raquo;</Link></button>
             </div>
         </div>
     )

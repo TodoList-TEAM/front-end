@@ -11,8 +11,9 @@
 
     width: 95vw;
     max-width: 430px;
-    height: max-content;
-    padding-bottom: 14vh;
+    
+    height: 100%;
+    padding-bottom: 15vh;
 }
 
 .body{

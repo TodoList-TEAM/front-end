@@ -8,6 +8,15 @@ import { MyPage } from '../components/myPage/MyPage';
 import { ComunityPage } from '../components/comunityPage/ComunityPage';
 import { MyInfoPage } from '../components/myInfo/MyInfoPage';
 
+import { IdFindPage } from '../components/loginPage/IdFindPage';
+import { PasswordFindPage } from '../components/loginPage/PasswordFindPage';
+import { SignUpPage } from '../components/loginPage/SignUpPage';
+
+import {New} from '../components/New';
+
+import { CategoryPage } from '../components/comunityPage/CategoryPage';
+import { Post } from '../components/Post';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -17,6 +26,29 @@ const router = createBrowserRouter([
         index: true,
         element: <LoginPage />,
       },
+      
+      {
+        path: 'Idfind',
+        element: <IdFindPage />,
+      },
+      {
+        path: 'Passwdfind',
+        element: <PasswordFindPage />,
+      },
+      {
+        path: 'signup',
+        element: <SignUpPage />,
+      },
+
+      {
+        path: 'new',
+        element: <New />,
+      },
+      {
+        path: 'post',
+        element: <Post />,
+      },
+
       {
         element: <RootLayout_after />,
         children:[
@@ -27,12 +59,27 @@ const router = createBrowserRouter([
           },
           {
             path: 'comunity',
-            element: <ComunityPage />,
+
+            children:[
+              {
+                index:true,
+                element: <ComunityPage />,
+              },
+              {
+                path: 'category',
+                element: <CategoryPage />,
+              },
+            ]
           },
           {
             path: 'mypage',
             element: <MyPage />,
           },
+
+          
+
+
+          
           
         ]
       },

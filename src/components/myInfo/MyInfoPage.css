@@ -8,7 +8,8 @@
     
     width: 95vw;
     max-width: 430px;
-    height: 135vh;
+    height: 100%;
+    padding-bottom: 15vh;
 }
 
 .myProfile{

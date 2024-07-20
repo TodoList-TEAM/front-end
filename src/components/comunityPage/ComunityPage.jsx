@@ -3,6 +3,7 @@ import { Footer } from "../Footer"
 import './ComunityPage.css'
 import { Cate } from "./Cate"
 
+
 export function ComunityPage(){
 
  
