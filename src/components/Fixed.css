@@ -24,9 +24,9 @@
     margin: 10px 15px;
 }
 .logo{
-    background-color: rgb(255, 247, 201);
+    background-color: #F5F4EF;
     border: none;
-    width: 50%;
+    width: max-content;
     min-height: max-content;
     padding: 5px;
 }
@@ -34,20 +34,30 @@
 .logoImg{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 #logoIcon{
-    width: 20%;
-    height: 20%;
+    background-image: url('./로고 아이콘.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+
     background-color: #FFE14F;
-    padding: 10px;
-    border-radius: 50px;
+    padding: 15px;
+    border-radius: 150px;
 }
 #logoText{
-    margin-left: 10%;
-    color:rgb(44, 33, 23);
-    font-weight: bold;
-}
+    width: 100px;
+    height: 18px;
+    padding: 0px 0px;
+    background-image: url('./로고 텍스트.png');
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 
+
+}
 
 
 .help{

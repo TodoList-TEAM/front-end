@@ -1,5 +1,6 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
+import { Add } from "../Add"
 import './ComunityPage.css'
 import { Cate } from "./Cate"
 
@@ -13,9 +14,8 @@ export function ComunityPage(){
         <div className='comunityHomePage'>
           
           
-          <div className='comunityHomePage_add'>
-            <h4>광고</h4>
-          </div>
+          <Add />
+          
           <div className='comunityHomePage_CategoryBox'>
             <div  className="CategoryBox_row">
               <Cate />

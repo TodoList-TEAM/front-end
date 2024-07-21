@@ -1,5 +1,6 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
+import { Add } from "../Add"
 import './HomePage.css'
 import { Thnumnail } from "../Thumnail"
 
@@ -10,9 +11,7 @@ export function HomePage(){
         <div className='homePage'>
           
 
-          <div className='add'>
-            <p id='ex'>ADD</p>
-          </div>
+          <Add />
 
           <div className="bannerDiv1">
             <div className="banner1">

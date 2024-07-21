@@ -1,10 +1,38 @@
 import { Header } from "../Header"
 import { Footer } from "../Footer"
 import './MyPage.css'
+import { useState } from "react"
 
 
 
 export function MyPage(){
+    const [isDrugChecked, setIsDrugChecked] = useState(false);
+    const [isCheckChecked, setIsCheckChecked] = useState(false);
+    const [isCautionChecked, setIsCautionChecked] = useState(false);
+
+
+    // 모달창 체크 박스 
+    const handleDrugCheckboxChange = () => {
+      setIsDrugChecked(!isDrugChecked);
+      
+      setIsCheckChecked(false);
+      setIsCautionChecked(false);
+    };
+    const handleCheckCheckboxChange = () => {
+      setIsCheckChecked(!isCheckChecked);
+
+      setIsDrugChecked(false);
+      setIsCautionChecked(false);
+    };
+    const handleCautionCheckboxChange = () => {
+      setIsCautionChecked(!isCautionChecked);
+
+      setIsDrugChecked(false);
+      setIsCheckChecked(false);
+    };
+
+
+
 
     return(
       <div className="screen_main">
@@ -36,21 +64,21 @@ export function MyPage(){
                 <button id='scheduleBtn'>+</button>
               </div>
               <div className='memoList'>  
-                <input type='checkbox' className="checkBoxV" id='drugBtn'></input>
+                <input type='checkbox' className="checkBoxV" id='drugBtn' checked={isDrugChecked} onChange={handleDrugCheckboxChange} ></input>
                 <label htmlFor='drugBtn' className="memo" id='drug'>
                   <p>약 복용 시간</p>
                   </label>
                 
-                <input type='checkbox' className="checkBoxV" id='checkBtn'></input>
+                <input type='checkbox' className="checkBoxV" id='checkBtn' checked={isCheckChecked} onChange={handleCheckCheckboxChange}></input>
                 <label htmlFor='checkBtn' className='memo' id='check'>
                   <p>검진 결과</p>
                 
                 </label>
-                <input type='checkbox' className="checkBoxV" id='cautionBtn'></input>
-                <div htmlFor='cautionBtn' className='memo' id='caution'>
+                <input type='checkbox' className="checkBoxV" id='cautionBtn' checked={isCautionChecked} onChange={handleCautionCheckboxChange}></input>
+                <label htmlFor='cautionBtn' className='memo' id='caution'>
                   <p>약 주의사항</p>
                 
-                </div>
+                </label>
 
               </div>
             </div>
@@ -127,8 +155,8 @@ export function MyPage(){
 
 
             {/* 여기 아래는 클릭 시 나오는 모달 창 */}
-          
-            <div className="popupModal">
+
+            <div className={`popupModal ${isDrugChecked ? 'checked' : ''}`}>
               <div className="popupModal_top">
                 <p>■ 복용 해야 하는 약의 시간과 기간을 적어주세요.</p>
                 <label htmlFor='drugBtn' id='X'>X</label>
@@ -152,6 +180,63 @@ export function MyPage(){
                 </div>
               </div>
             </div>
+
+            <div className={`popupModal ${isCheckChecked ? 'checked' : ''}`}>
+              <div className="popupModal_top">
+                <p>■ 오늘 검진 결과에 대해 적어주세요.</p>
+                <label htmlFor='drugBtn' id='X'>X</label>
+              </div>
+              <div className="popupModal_box">
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+              </div>
+            </div>
+
+            <div className={`popupModal ${isCautionChecked ? 'checked' : ''}`}>
+              <div className="popupModal_top">
+                <p>■ 약의 정량과 주의사항에 대해 적어주세요.</p>
+                <label htmlFor='drugBtn' id='X'>X</label>
+              </div>
+              <div className="popupModal_box">
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+                <div className="popupModal_box_letter">
+                  <input type="checkbox"></input>
+                  <input type='text' className="popupModal_box_letter_text"></input>
+                </div>
+              </div>
+            </div>
+
+            {/* 여기까지가 모달창 내용 */}
+
+
+
+
+
 
           <button className='writeBtn'>
             +
