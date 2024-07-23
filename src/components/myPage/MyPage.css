@@ -78,10 +78,6 @@
     font-weight: bold;
 }
 
-.checkBoxV{
-    display: none;
-}
-
 #drug{
     background-color: #EE8F84;
 }
@@ -205,6 +201,13 @@
     background-color: #ffffff00;
 }
 
+
+
+.checkBoxV{
+    display: none;
+}
+
+
 .popupModal.checked {
     
    bottom: 7vh;
@@ -224,7 +227,7 @@
     margin-left: 10%;
     margin-right: 10%;
     position: fixed;
-    bottom: -40vh;
+    bottom: -80vh;
     
     display: flex;
     flex-direction: column;

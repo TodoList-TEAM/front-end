@@ -184,7 +184,7 @@ export function MyPage(){
             <div className={`popupModal ${isCheckChecked ? 'checked' : ''}`}>
               <div className="popupModal_top">
                 <p>■ 오늘 검진 결과에 대해 적어주세요.</p>
-                <label htmlFor='drugBtn' id='X'>X</label>
+                <label htmlFor='checkBtn' id='X'>X</label>
               </div>
               <div className="popupModal_box">
                 <div className="popupModal_box_letter">
@@ -209,7 +209,7 @@ export function MyPage(){
             <div className={`popupModal ${isCautionChecked ? 'checked' : ''}`}>
               <div className="popupModal_top">
                 <p>■ 약의 정량과 주의사항에 대해 적어주세요.</p>
-                <label htmlFor='drugBtn' id='X'>X</label>
+                <label htmlFor='cautionBtn' id='X'>X</label>
               </div>
               <div className="popupModal_box">
                 <div className="popupModal_box_letter">
@@ -239,7 +239,7 @@ export function MyPage(){
 
 
           <button className='writeBtn'>
-            +
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><rect width="50" height="50" fill="#FFE14F" rx="25"/><path stroke="#40300E" strokeLinecap="round" strokeWidth="2" d="M25 14.75v20.5M35.25 25h-20.5"/></svg>
           </button>
 
         </div>

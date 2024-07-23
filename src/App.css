@@ -17,14 +17,11 @@ body{
 
 
 .writeBtn {
-    background-color:  rgb(255, 225, 56);
-    border-radius: 100%;
     border: none;
-    font-size: 50px;
-    width: 15vw;
-    height: 15vw;
-    max-width: 70px;
-    max-height: 70px;
+    border-radius: 100%;
+    padding: 0px;
+    width: max-content; 
+    height:  max-content; 
 
     position: fixed;
     top: 75vh;

@@ -50,15 +50,7 @@ export function HomePage(){
                 <li>
                   <Thnumnail />
                 </li>
-                <li>
-                  <Thnumnail />
-                </li>
-                <li>
-                  <Thnumnail />
-                </li>
-                <li>
-                  <Thnumnail />
-                </li>
+                
 
                 
                   
